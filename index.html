@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Target200</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<section id="login" class="center"><form id="lf" class="card login">
+<h1>Target200</h1><p class="mut">Sign in with the ID your teacher gave you.</p>
+<label>Student ID<input id="sid" autocomplete="username" required></label>
+<label>Password<input id="pw" type="password" autocomplete="current-password" required></label>
+<p id="err" class="err" hidden></p><button class="btn">Sign in</button></form></section>
+<section id="welcome" class="center" hidden><div class="wel">
+<div id="wdays" class="big"></div><p class="wl">days left until March 1, 2027</p>
+<p class="mut" id="wmsg"></p><button id="wgo" class="btn">Start studying</button></div></section>
+<div id="app" hidden>
+<header class="top"><b>Target200</b><span id="chip" class="chip"></span><button id="out" class="lnk">Log out</button></header>
+<nav id="nav"><button data-v="today">Today</button><button data-v="study">Study</button><button data-v="syl">Syllabus</button><button data-v="prog">Progress</button></nav>
+<main id="main"></main></div>
+<div id="banner" class="banner" hidden></div>
+<video id="cam" autoplay muted playsinline hidden></video>
+<script type="module" src="app.js"></script></body></html>

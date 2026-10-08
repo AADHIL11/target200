@@ -1,0 +1,33 @@
+:root{--bg:#F7F5F0;--card:#fff;--bd:#E6E2D9;--ink:#1F2933;--sec:#6B7280;--ac:#0F766E;--Maths:#3B6FB6;--Physics:#D98E2B;--Chemistry:#C0566B;--ok:#2E7D5B;--al:#B4533A}
+@media(prefers-color-scheme:dark){:root{--bg:#121413;--card:#1B1E1C;--bd:#2A2E2B;--ink:#E8E4DC;--sec:#9CA3AF;--ac:#14B8A6}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,"Google Sans",Roboto,"Segoe UI",sans-serif}
+[hidden]{display:none!important}h1,h2,h3{margin:0 0 .5rem;font-weight:600}h2{font-size:1.35rem}h3{font-size:1.05rem}
+.center{min-height:100vh;display:grid;place-items:center;padding:1rem}.mut{color:var(--sec)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:1.1rem;margin-bottom:.9rem}
+.login{width:min(380px,100%)}label{display:block;margin:.8rem 0;font-size:.9rem;color:var(--sec)}
+input,select{display:block;width:100%;margin-top:.3rem;padding:.7rem;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+.btn{background:var(--ac);color:#fff;border:0;border-radius:10px;padding:.75rem 1.2rem;font:inherit;font-weight:600;cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--bd)}.btn:disabled{opacity:.45}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px}.err{color:var(--al);margin:.3rem 0}
+.wel{text-align:center}.big{font-size:min(34vw,9rem);font-weight:700;line-height:1;color:var(--ac)}.wl{font-size:1.2rem;margin:.4rem 0}
+.top{display:flex;align-items:center;gap:.7rem;padding:.8rem 1rem;border-bottom:1px solid var(--bd);position:sticky;top:0;background:var(--bg);z-index:5}
+.chip{margin-left:auto;background:var(--card);border:1px solid var(--bd);border-radius:99px;padding:.15rem .7rem;font-size:.85rem}
+.lnk{background:none;border:0;color:var(--sec);cursor:pointer;font:inherit}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--card);border-top:1px solid var(--bd);z-index:5}
+nav button{flex:1;padding:.9rem 0;background:none;border:0;color:var(--sec);font:inherit;cursor:pointer}nav button.on{color:var(--ac);font-weight:600;box-shadow:inset 0 2px var(--ac)}
+main{max-width:900px;margin:0 auto;padding:1rem 1rem 6rem}
+@media(min-width:800px){nav{top:52px;bottom:0;right:auto;width:170px;flex-direction:column;border-top:0;border-right:1px solid var(--bd);justify-content:flex-start}
+nav button{text-align:left;padding:.8rem 1.2rem;flex:0}nav button.on{box-shadow:inset 3px 0 var(--ac)}main{margin-left:190px;padding-bottom:2rem}}
+.ring{display:block;margin:0 auto}.ring text{fill:var(--ink)}.rt{text-anchor:middle}
+.row{display:flex;align-items:center;gap:.6rem;margin:.55rem 0}.row .n{width:5.5rem}.row .v{width:4rem;text-align:right;color:var(--sec);font-size:.9rem}
+.bar{flex:1;height:8px;background:var(--bd);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:var(--ac)}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:.4rem}
+.grid{display:grid;gap:.9rem}@media(min-width:700px){.g2{grid-template-columns:1fr 1fr}}
+.pills{display:flex;gap:.5rem;flex-wrap:wrap;margin:.5rem 0}.pill{padding:.5rem 1rem;border:1px solid var(--bd);border-radius:99px;background:var(--card);color:var(--ink);font:inherit;cursor:pointer}.pill.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.tk{display:flex;gap:.6rem;align-items:flex-start;padding:.4rem 0}.tk input{width:auto;margin:.3rem 0 0}
+details{border:1px solid var(--bd);border-radius:12px;background:var(--card);margin-bottom:.6rem;padding:.2rem .9rem}summary{cursor:pointer;padding:.7rem 0;font-weight:600}
+.tag{font-size:.8rem;color:var(--al);margin-left:.4rem}
+.timer{font-size:min(20vw,5.5rem);font-weight:700;text-align:center;font-variant-numeric:tabular-nums}
+.banner{position:fixed;top:60px;left:50%;transform:translateX(-50%);background:var(--al);color:#fff;padding:.7rem 1.1rem;border-radius:10px;z-index:20;max-width:92vw}
+#cam{position:fixed;right:14px;bottom:76px;width:84px;height:84px;object-fit:cover;border-radius:50%;border:3px solid var(--ac);transform:scaleX(-1);z-index:9}
+@media(prefers-reduced-motion:no-preference){.bar i{transition:width .3s}}
